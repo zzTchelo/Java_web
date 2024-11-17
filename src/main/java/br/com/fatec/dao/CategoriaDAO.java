@@ -1,24 +1,21 @@
 package br.com.fatec.dao;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.fatec.factory.ConnectionFactory;
-import br.com.fatec.model.Categoria;
-import br.com.fatec.model.Produto;
-
-
+import br.com.fatec.service.Connection;
+import br.com.fatec.vo.Categoria;
+import br.com.fatec.vo.Produto;
 
 public class CategoriaDAO {
 
-	private Connection connection;
+	private java.sql.Connection connection;
 
 	public CategoriaDAO() {
-		this.connection = new ConnectionFactory().ConnectionClass();
+		this.connection = new Connection().ConnectionClass();
 	}
 
 	public List<Categoria> listar() throws SQLException {

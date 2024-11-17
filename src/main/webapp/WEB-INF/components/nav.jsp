@@ -20,6 +20,9 @@
         <li class="nav-item ml-4">
         	<a class="nav-link" href="./categoria?mode=ListaCategoria" role="button">Categorias</a>
         </li>
+        <li class="nav-item ml-4">
+          <a class="nav-link" href="./carrinho?mode=ListaCarrinho" role="button">Carrinho</a>
+        </li>
       </ul>
     </div>
   </div>

@@ -14,5 +14,10 @@ CREATE TABLE PRODUTO (
   CONSTRAINT FK_CATEGORIA FOREIGN KEY (idCategoria) REFERENCES CATEGORIA (idCategoria) ON DELETE CASCADE
 );
 
+CREATE TABLE CARRINHO (
+  id_item INT PRIMARY KEY AUTO_INCREMENT,
+  id_produto VARCHAR(255) NOT NULL
+);
+
 -- Inserindo dados na tabela CATEGORIA
 INSERT INTO CATEGORIA (nome) VALUES ('Eletrônicos'), ('Games'), ('Eletrodomésticos'), ('Alimentos'), ('Brinquedos');
